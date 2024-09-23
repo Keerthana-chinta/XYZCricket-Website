@@ -1,4 +1,3 @@
-
 A detailed guide for setting up your React project with Tailwind CSS and deploying it on GitHub, including creating a multi-stage registration form with demo API integration.
 
 #Project Setup:
