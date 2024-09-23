@@ -89,7 +89,7 @@ const handleSubmit = async (formData) => {
 #Install GitHub Pages Package: Install the GitHub Pages package:
 npm install gh-pages --save-dev
 
-#Update package.json: Add the following properties in your package.json:
+#Update package.json: Add the following properties in your package.json: 
 json:
 "homepage": "https://<your-username>.github.io/<your-repo-name>",
 "scripts": {
@@ -97,7 +97,7 @@ json:
   "deploy": "gh-pages -d build"
 }
 
-#Deploy Your Application: Run the following command to deploy your application:
+#Deploy Your Application: Run the following command to deploy your application: 
 npm run deploy
 
-#Access Your Site: Visit [https://your-username.github.io/your-repo-name]  to see your live application.
+#Access Your Site: Visit https://github.com/your-username/your-repo-name to see your live application.
