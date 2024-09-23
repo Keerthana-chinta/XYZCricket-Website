@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+button {
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.team-card {
+  transition: transform 0.3s;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  color: black;
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1477ac;
+  text-shadow: 2px 2px 4px rgba(5, 46, 85, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  margin: 15px; 
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid #226386;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+}
+
+.nav-button:hover {
+  background-color: #226386; 
+  color: white;
+}
+
+.floating-card-container {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  perspective: 1000px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.flip-card {
+  width: 150px;
+  height: 200px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front {
+  background-color: #fff;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-image {
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.flip-card-back {
+  background-color: #3498db;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 5px;
+  text-align: center;
+}
+
+.floating-card-container {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  perspective: 1000px;
+  animation: float 3s ease-in-out infinite;
+  gap: 40px;
+}
+
+.spinning-icon {
+  margin-right: 10px;
+  animation: spin 2s linear infinite;
+  color:red;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.tooltip {
+  display: none;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip.visible {
+  display: block;
+}
