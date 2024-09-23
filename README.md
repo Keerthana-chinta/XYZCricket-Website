@@ -100,4 +100,4 @@ json:
 #Deploy Your Application: Run the following command to deploy your application:
 npm run deploy
 
-#Access Your Site: Visit [https://<your-username>.github.io/<your-repo-name>]  to see your live application.
+#Access Your Site: Visit [https://your-username.github.io/your-repo-name]  to see your live application.
