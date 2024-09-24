@@ -22,11 +22,14 @@ npm -v
 ```
 ### 2. Install FNM (Fast Node Manager)
 To manage multiple versions of Node.js, install FNM:
-```winget install Schniz.fnm
+```
+winget install Schniz.fnm
 ```
 ### 3. Set FNM to Use on Directory Change
 Configure FNM to switch Node versions when entering a directory:
-```fnm env --use-on-cd```
+```
+fnm env --use-on-cd
+```
 ### 4. Update npm
 Ensure npm is updated:
 ```
