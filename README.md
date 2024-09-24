@@ -1,4 +1,4 @@
-Project Setup: Cricket Website
+# Project Setup: Cricket Website
 This guide will walk you through setting up your React project with Tailwind CSS, creating a multi-stage registration form with demo API integration, and deploying the project on GitHub Pages.
 
 # Prerequisites
