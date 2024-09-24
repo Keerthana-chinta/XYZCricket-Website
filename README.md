@@ -40,6 +40,9 @@ npm rebuild
 Create your React app by running:
 ```
 npx create-react-app cricket-website
+```
+Navigate to your project directory:
+```
 cd cricket-website
 ```
 ### 6. Install Tailwind CSS
